@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/livhtec/static/css/main.073c9b0a.css",
+    "main.js": "/livhtec/static/js/main.b1e631a4.js",
+    "static/js/787.d998eb31.chunk.js": "/livhtec/static/js/787.d998eb31.chunk.js",
+    "static/media/logo.svg": "/livhtec/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/livhtec/index.html",
+    "main.073c9b0a.css.map": "/livhtec/static/css/main.073c9b0a.css.map",
+    "main.b1e631a4.js.map": "/livhtec/static/js/main.b1e631a4.js.map",
+    "787.d998eb31.chunk.js.map": "/livhtec/static/js/787.d998eb31.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.b1e631a4.js"
+  ]
+}
