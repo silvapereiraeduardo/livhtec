@@ -1,25 +1,18 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Gif from './assets/animation_Contrast_prxs1mue.gif'
 
 function App() {
   return (
-    <div className="d-flex h-100 text-center text-bg-dark">
-      <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header className="mb-auto"></header>
-
-        <main className="px-3">
-          <h1>livhtec</h1>
-          <p className='lead fst-italic'>Coming Soon...</p>
+    <div className="d-flex h-100 text-center">
+      <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column justify-content-center">
+        <main className="px-3 ">
+          <h1>
+            <img src={Gif} alt="livhtec solutions" />
+          </h1>
+          <p className='lead fst-italic comming-soon-text'>Coming Soon...</p>
         </main>
-
-        <footer className="mt-auto text-white-50">
-          {
-            /**
-             * <p>Cover template for <a href="https://getbootstrap.com/" className="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" className="text-white">@mdo</a>.</p>
-             */
-          }
-        </footer>
       </div>
     </div>
   );
