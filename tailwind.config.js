@@ -14,16 +14,17 @@ module.exports = {
     colors: {
       ...colors,
       primary: {
-        50: "#e2f7fa",
-        100: "#b8ebf1",
-        200: "#8ddfe9",
+        50: "#effbfc",
+        100: "#d6f4f7",
+        200: "#b2e9ef",
         300: "#68d1df",
-        400: "#55c7d7",
-        500: "#49bed1",
-        600: "#45aebe",
-        700: "#3e98a5",
-        800: "#38848d",
-        900: "#2b6164",
+        400: "#40bdd0",
+        500: "#25a0b5",
+        600: "#218299",
+        700: "#21697d",
+        800: "#235767",
+        900: "#214958",
+        950: "#112f3b",
       },
       complementary: {
         50: "#ffebec",
@@ -106,9 +107,6 @@ module.exports = {
           },
           "@screen xl": {
             maxWidth: "1280px",
-          },
-          "@screen 2xl": {
-            maxWidth: "1536px",
           },
         },
       });
