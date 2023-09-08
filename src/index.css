@@ -2,4 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* #68D2DF */
+.gradient {
+  background: linear-gradient(
+    120deg,
+    theme("colors.primary.100") 0%,
+    theme("colors.primary.200") 100%
+  );
+}
+
+.dark {
+  .dark\:gradient-dark {
+    background: linear-gradient(
+      120deg,
+      theme("colors.primary.800") 0%,
+      theme("colors.primary.900") 100%
+    );
+  }
+}

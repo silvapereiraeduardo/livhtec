@@ -1,7 +1,6 @@
 import React from "react";
-import "./App.css";
 
-import { Navbar } from "./components/Navbar";
+import { Header } from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
 import { FeaturiesSection } from "./components/FeaturiesSection";
 import { TestimonialsSection } from "./components/TestimonialsSection";
@@ -12,7 +11,7 @@ import { LeftAlignedCallToAction } from "./components/LeftAlignedCallToAction";
 function App() {
   return (
     <>
-      <Navbar />
+      <Header />
       <HeroSection />
       <FeaturiesSection />
       <LeftAlignedCallToAction />

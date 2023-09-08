@@ -2,32 +2,57 @@ import React from "react";
 
 export const HeroSection: React.FC<{}> = () => {
   return (
-    <div className="py-20 gradient">
-      <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between flex-wrap">
-          <div className="w-full md:w-1/2">
-            <h2 className="text-4xl font-bold mb-2 text-white">Hero Banner</h2>
-            <h3 className="text-2xl mb-8 text-primary-200">
-              hero banner is a term used to describe an oversized image of a
-              product. In this concept, e-commerces use images with the
-              appropriate zoom to highlight the main characteristics of that
-              merchandise accompanied by banners next to the image.
-            </h3>
+    <section className="gradient dark:gradient-dark">
+      <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div className="mr-auto place-self-center lg:col-span-7">
+          <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-primary-900 dark:text-white">
+            Lorem ipsum dolor sit amet
+          </h1>
+          <p className="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-primary-900 dark:text-white">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perferendis, voluptatem. Explicabo consequuntur ipsum dolores
+            obcaecati quia, qui doloribus illo ipsa eligendi tempore animi,
+            quaerat minima nemo sunt recusandae. Necessitatibus, iusto!
+          </p>
+          <a
+            href="#"
+            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+          >
+            Get started
+            <svg
+              className="w-5 h-5 ml-2 -mr-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="#"
+            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center border rounded-lg text-primary-900 border-primary-900 dark:text-white dark:border-white focus:ring-4"
+          >
+            Speak to Sales
+          </a>
+        </div>
+        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+          <img
+            alt="Livhtec Logo"
+            className="dark:hidden"
+            src={`${process.env.PUBLIC_URL}/assets/black_logo_transparent_background.png`}
+          />
 
-            <button className="bg-white border-primary-700 text-primary-700 font-semibold rounded-xl py-4 px-8 shadow-lg uppercase tracking-wider hover:bg-primary-50">
-              Action Button
-            </button>
-          </div>
-
-          <div>
-            <img
-              className="mx-auto max-h-96 p-2"
-              src={`${process.env.PUBLIC_URL}/assets/undraw_team_up_re_84ok.svg`}
-              alt="Monitoring"
-            />
-          </div>
+          <img
+            alt="Livhtec Logo"
+            className="hidden dark:block"
+            src={`${process.env.PUBLIC_URL}/assets/white_logo_transparent_background.png`}
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
