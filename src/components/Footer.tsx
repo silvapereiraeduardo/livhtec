@@ -5,8 +5,8 @@ export const Footer: React.FC<{}> = () => {
     <footer className="bg-primary-900">
       <div className="container mx-auto px-6 pt-10 pb-6">
         <div className="flex flex-wrap">
-          <div className="w-full md:w-1/4 text-center md:text-left">
-            <h5 className="uppercase mb-6 font-bold text-white">Links</h5>
+          <div className="w-full md:w-1/4 text-center mb-6 md:mb-0 md:text-left">
+            <h5 className="uppercase mb-4 font-bold text-white">Links</h5>
             <ul className="mb-4">
               <li className="mt-2">
                 <a href="#" className="hover:underline text-white">
@@ -25,8 +25,8 @@ export const Footer: React.FC<{}> = () => {
               </li>
             </ul>
           </div>
-          <div className="w-full md:w-1/4 text-center md:text-left">
-            <h5 className="uppercase mb-6 font-bold text-white">Legal</h5>
+          <div className="w-full md:w-1/4 text-center mb-6 md:mb-0 md:text-left">
+            <h5 className="uppercase mb-4 font-bold text-white">Legal</h5>
             <ul className="mb-4">
               <li className="mt-2">
                 <a href="#" className="hover:underline text-white">
@@ -40,8 +40,8 @@ export const Footer: React.FC<{}> = () => {
               </li>
             </ul>
           </div>
-          <div className="w-full md:w-1/4 text-center md:text-left">
-            <h5 className="uppercase mb-6 font-bold text-white">Social</h5>
+          <div className="w-full md:w-1/4 text-center mb-6 md:mb-0 md:text-left">
+            <h5 className="uppercase mb-4 font-bold text-white">Social</h5>
             <ul className="mb-4">
               <li className="mt-2">
                 <a href="#" className="hover:underline text-white">
@@ -60,8 +60,8 @@ export const Footer: React.FC<{}> = () => {
               </li>
             </ul>
           </div>
-          <div className="w-full md:w-1/4 text-center md:text-left">
-            <h5 className="uppercase mb-6 font-bold text-white">Company</h5>
+          <div className="w-full md:w-1/4 text-center mb-6 md:mb-0 md:text-left">
+            <h5 className="uppercase mb-4 font-bold text-white">Company</h5>
             <ul className="mb-4">
               <li className="mt-2">
                 <a href="#" className="hover:underline text-white">
@@ -84,7 +84,7 @@ export const Footer: React.FC<{}> = () => {
       </div>
 
       <div className="bg-primary-950">
-        <div className="container mx-auto px-6 pt-2 pb-2">
+        <div className="container mx-auto px-6 py-4 text-center md:text-left">
           <a href="#" className="text-white text-sm">
             &copy; 2023 Eduardo Silva Pereira
           </a>
