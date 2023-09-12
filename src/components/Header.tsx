@@ -1,4 +1,5 @@
 import React from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 export const Header: React.FC<{}> = () => {
   const [menuOpened, setMenuOpened] = React.useState(false);
@@ -8,8 +9,8 @@ export const Header: React.FC<{}> = () => {
   };
 
   return (
-    <header className="bg-white">
-      <nav className="flex justify-between items-center container mx-auto my-4">
+    <header className="bg-white dark:bg-primary-900">
+      <nav className="flex justify-between items-center container mx-auto py-4">
         <div className="flex justify-center items-center">
           <img
             alt="Livhtec Logo"
@@ -30,41 +31,61 @@ export const Header: React.FC<{}> = () => {
 
         <div
           data-menu={!!menuOpened ? "opened" : "closed"}
-          className="nav-links duration-500 absolute bg-white w-full flex items-center px-6 left-0 top-[-100%] data-[menu=opened]:top-16 md:min-h-fit md:w-auto md:static"
+          className="nav-links duration-500 absolute bg-white dark:bg-primary-900 md:bg-transparent md:dark:bg-transparent w-full flex items-center px-6 left-0 top-[-100%] data-[menu=opened]:top-16 md:min-h-fit md:w-auto md:static"
         >
-          <ul className="flex flex-col w-full gap-2 md:items-center md:gap-6 md:flex-row">
+          <ul className="flex flex-col w-full gap-2 md:items-center md:justify-center md:gap-6 md:flex-row">
             <li className="mb-4 md:mb-0">
-              <a className="hover:text-gray-500" href="#products">
-                Products
+              <a
+                className="text-gray-900 hover:text-gray-500 dark:text-white dark:hover:text-white block"
+                href="#services"
+              >
+                Services
               </a>
             </li>
             <li className="mb-4 md:mb-0">
-              <a className="hover:text-gray-500" href="#features">
+              <a
+                className="text-gray-900 hover:text-gray-500 dark:text-white dark:hover:text-white block"
+                href="#features"
+              >
                 Features
               </a>
             </li>
             <li className="mb-4 md:mb-0">
-              <a className="hover:text-gray-500" href="#resource">
+              <a
+                className="text-gray-900 hover:text-gray-500 dark:text-white dark:hover:text-white block"
+                href="#resource"
+              >
                 Resource
               </a>
             </li>
             <li className="mb-4 md:mb-0">
-              <a className="hover:text-gray-500" href="#developers">
+              <a
+                className="text-gray-900 hover:text-gray-500 dark:text-white dark:hover:text-white block"
+                href="#developers"
+              >
                 Developers
               </a>
             </li>
             <li className="mb-4 md:mb-0">
-              <a className="hover:text-gray-500" href="#pricing">
+              <a
+                className="text-gray-900 hover:text-gray-500 dark:text-white dark:hover:text-white block"
+                href="#pricing"
+              >
                 Pricing
               </a>
+            </li>
+            <li className="mb-4 md:mb-0 hidden md:block">
+              <ThemeToggle />
             </li>
           </ul>
         </div>
 
-        <div className="flex items-center gap-6 md:hidden">
+        <div className="flex items-center gap-6 pr-4 md:hidden">
+          <ThemeToggle className="md:hidden text-3xl cursor-pointer text-gray-900 hover:text-gray-500 dark:text-white dark:hover:text-white block" />
+
           <button
             onClick={() => onToggleMenu()}
-            className="text-3xl cursor-pointer"
+            className="text-3xl cursor-pointer text-gray-900 hover:text-gray-500 dark:text-white dark:hover:text-white block"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
