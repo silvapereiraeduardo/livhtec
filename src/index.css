@@ -5,8 +5,8 @@
 .gradient {
   background: linear-gradient(
     120deg,
-    theme("colors.primary.100") 0%,
-    theme("colors.primary.200") 100%
+    theme("colors.primary.50") 0%,
+    theme("colors.primary.100") 100%
   );
 }
 
