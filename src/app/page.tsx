@@ -1,341 +1,347 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
+import Head from 'next/head'
 import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-[100dvh]">
-      <header className="container px-4 md:px-6 h-14 flex items-center">
-        <Link
-          href="#"
-          className="flex items-center justify-center"
-          prefetch={false}
-        >
-          <div className="flex gap-2 items-center">
-            <LivhtecIcon className="h-12 w-12" />
-            <span className="sr-only md:not-sr-only font-bold">
-              Livhtec Solutions
-            </span>
-          </div>
-        </Link>
+    <>
+      <Head>
+        <meta name="robots" content="noindex,nofollow" />
+      </Head>
 
-        <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
+      <div className="flex flex-col min-h-[100dvh]">
+        <header className="container px-4 md:px-6 h-14 flex items-center">
           <Link
             href="#"
-            className="text-sm font-medium hover:underline underline-offset-4"
+            className="flex items-center justify-center"
             prefetch={false}
           >
-            Services
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            About
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            Clients
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            Contact
+            <div className="flex gap-2 items-center">
+              <LivhtecIcon className="h-12 w-12" />
+              <span className="sr-only md:not-sr-only font-bold">
+                Livhtec Solutions
+              </span>
+            </div>
           </Link>
 
-          <Button
-            type="button"
-            variant={'outline'}
-            className="text-sm font-medium hover:underline underline-offset-4 p-0 overflow-hidden rounded-xl w-[25px] h-[25px]"
-          >
-            <img
-              src="/united-states-flag.png"
-              width="30"
-              height="30"
-              alt="Hero"
-              className="object-cover aspect-[1/2]"
-            />
-          </Button>
-        </nav>
-      </header>
+          <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
+            <Link
+              href="#"
+              className="text-sm font-medium hover:underline underline-offset-4"
+              prefetch={false}
+            >
+              Services
+            </Link>
+            <Link
+              href="#"
+              className="text-sm font-medium hover:underline underline-offset-4"
+              prefetch={false}
+            >
+              About
+            </Link>
+            <Link
+              href="#"
+              className="text-sm font-medium hover:underline underline-offset-4"
+              prefetch={false}
+            >
+              Clients
+            </Link>
+            <Link
+              href="#"
+              className="text-sm font-medium hover:underline underline-offset-4"
+              prefetch={false}
+            >
+              Contact
+            </Link>
 
-      <main className="flex-1">
-        <section
-          className="w-full py-6 md:py-16"
-          style={{ backgroundImage: 'url("/square-versatiles.svg")' }}
-        >
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-              <div className="flex flex-col justify-center space-y-4">
+            <Button
+              type="button"
+              variant={'outline'}
+              className="text-sm font-medium hover:underline underline-offset-4 p-0 overflow-hidden rounded-xl w-[25px] h-[25px]"
+            >
+              <img
+                src="/united-states-flag.png"
+                width="30"
+                height="30"
+                alt="Hero"
+                className="object-cover aspect-[1/2]"
+              />
+            </Button>
+          </nav>
+        </header>
+
+        <main className="flex-1">
+          <section
+            className="w-full py-6 md:py-16"
+            style={{ backgroundImage: 'url("/square-versatiles.svg")' }}
+          >
+            <div className="container px-4 md:px-6">
+              <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+                <div className="flex flex-col justify-center space-y-4">
+                  <div className="space-y-2">
+                    <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                      Elevate Your IT with Livhtec Solutions
+                    </h1>
+                    <p className="max-w-[600px] text-foreground md:text-xl">
+                      Unlock the full potential of your technology with our
+                      expert IT consulting services.
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                    <Link href="#" prefetch={false}>
+                      <Button type="button" variant={'tertiary'}>
+                        Get a Quote
+                      </Button>
+                    </Link>
+                    <Link href="#" prefetch={false}>
+                      <Button type="button" variant={'ghost'}>
+                        Learn More
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+                <img
+                  src="/undraw_online_test_re_kyfx.svg"
+                  width="550"
+                  height="550"
+                  alt="Hero"
+                  className="mx-auto aspect-video overflow-hidden rounded-xl object-contain lg:order-last lg:aspect-square"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section className="w-full py-6 md:py-16 bg-card">
+            <div className="container px-4 md:px-6">
+              <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Elevate Your IT with Livhtec Solutions
-                  </h1>
-                  <p className="max-w-[600px] text-foreground md:text-xl">
-                    Unlock the full potential of your technology with our expert
-                    IT consulting services.
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                    Our Key Services
+                  </h2>
+                  <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    Livhtec Solutions offers a wide range of services to help
+                    your business thrive in the digital age.
                   </p>
                 </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link href="#" prefetch={false}>
-                    <Button type="button" variant={'tertiary'}>
-                      Get a Quote
-                    </Button>
-                  </Link>
-                  <Link href="#" prefetch={false}>
-                    <Button type="button" variant={'ghost'}>
-                      Learn More
-                    </Button>
-                  </Link>
+              </div>
+              <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-3 lg:gap-12">
+                <div className="grid gap-1">
+                  <div className="flex items-center gap-4">
+                    <CloudIcon className="h-8 w-8 text-primary" />
+                    <h3 className="text-xl font-bold">Cloud Infrastructure</h3>
+                  </div>
+                  <p className="text-muted-foreground">
+                    Migrate your systems to the cloud and optimize your
+                    infrastructure for scalability and reliability.
+                  </p>
+                </div>
+                <div className="grid gap-1">
+                  <div className="flex items-center gap-4">
+                    <ConciergeBellIcon className="h-8 w-8 text-primary" />
+                    <h3 className="text-xl font-bold">IT Consulting</h3>
+                  </div>
+                  <p className="text-muted-foreground">
+                    Our experienced consultants will help you align your
+                    technology with your business goals.
+                  </p>
+                </div>
+                <div className="grid gap-1">
+                  <div className="flex items-center gap-4">
+                    <LockIcon className="h-8 w-8 text-primary" />
+                    <h3 className="text-xl font-bold">Cybersecurity</h3>
+                  </div>
+                  <p className="text-muted-foreground">
+                    Protect your data and systems from cyber threats with our
+                    comprehensive security solutions.
+                  </p>
                 </div>
               </div>
-              <img
-                src="/undraw_online_test_re_kyfx.svg"
-                width="550"
-                height="550"
-                alt="Hero"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-contain lg:order-last lg:aspect-square"
-              />
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section className="w-full py-6 md:py-16 bg-card">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Our Key Services
-                </h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Livhtec Solutions offers a wide range of services to help your
-                  business thrive in the digital age.
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-3 lg:gap-12">
-              <div className="grid gap-1">
-                <div className="flex items-center gap-4">
-                  <CloudIcon className="h-8 w-8 text-primary" />
-                  <h3 className="text-xl font-bold">Cloud Infrastructure</h3>
+          <section className="w-full py-6 md:py-16">
+            <div className="container px-4 md:px-6">
+              <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                <div className="space-y-2">
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                    What Our Clients Say
+                  </h2>
+                  <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    Hear from the businesses we've helped transform with our IT
+                    solutions.
+                  </p>
                 </div>
-                <p className="text-muted-foreground">
-                  Migrate your systems to the cloud and optimize your
-                  infrastructure for scalability and reliability.
-                </p>
-              </div>
-              <div className="grid gap-1">
-                <div className="flex items-center gap-4">
-                  <ConciergeBellIcon className="h-8 w-8 text-primary" />
-                  <h3 className="text-xl font-bold">IT Consulting</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Our experienced consultants will help you align your
-                  technology with your business goals.
-                </p>
-              </div>
-              <div className="grid gap-1">
-                <div className="flex items-center gap-4">
-                  <LockIcon className="h-8 w-8 text-primary" />
-                  <h3 className="text-xl font-bold">Cybersecurity</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Protect your data and systems from cyber threats with our
-                  comprehensive security solutions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="w-full py-6 md:py-16">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  What Our Clients Say
-                </h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Hear from the businesses we've helped transform with our IT
-                  solutions.
-                </p>
-              </div>
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-                <div className="rounded-lg border bg-background p-6 shadow-sm">
-                  <blockquote className="flex flex-col justify-between h-full">
-                    <div>
-                      <p className="text-muted-foreground">
-                        "Livhtec Solutions has been an invaluable partner in\n
-                        our digital transformation. Their expertise and\n
-                        dedication have been instrumental in driving our\n
-                        business forward."
-                      </p>
-                    </div>
-                    <div className="mt-4 flex items-center space-x-4">
-                      <img
-                        src="/placeholder.png"
-                        width="80"
-                        height="40"
-                        alt="Client Logo"
-                        className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                      />
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+                  <div className="rounded-lg border bg-background p-6 shadow-sm">
+                    <blockquote className="flex flex-col justify-between h-full">
                       <div>
-                        <div className="text-sm font-medium">
-                          Emerson Ribeiro, CEO
-                        </div>
-                        <div className="text-xs text-muted-foreground">
-                          Livhtec Solutions
+                        <p className="text-muted-foreground">
+                          "Livhtec Solutions has been an invaluable partner in\n
+                          our digital transformation. Their expertise and\n
+                          dedication have been instrumental in driving our\n
+                          business forward."
+                        </p>
+                      </div>
+                      <div className="mt-4 flex items-center space-x-4">
+                        <img
+                          src="/placeholder.png"
+                          width="80"
+                          height="40"
+                          alt="Client Logo"
+                          className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+                        />
+                        <div>
+                          <div className="text-sm font-medium">
+                            Emerson Ribeiro, CEO
+                          </div>
+                          <div className="text-xs text-muted-foreground">
+                            Livhtec Solutions
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <div className="rounded-lg border bg-background p-6 shadow-sm">
-                  <blockquote className="flex flex-col justify-between h-full">
-                    <div>
-                      <p className="text-muted-foreground">
-                        "Working with Livhtec Solutions has been a
-                        game-changer\n for our business. Their innovative
-                        solutions and\n exceptional support have helped us
-                        streamline our\n operations and drive growth."
-                      </p>
-                    </div>
-                    <div className="mt-4 flex items-center space-x-4">
-                      <img
-                        src="/placeholder.png"
-                        width="80"
-                        height="40"
-                        alt="Client Logo"
-                        className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                      />
+                    </blockquote>
+                  </div>
+                  <div className="rounded-lg border bg-background p-6 shadow-sm">
+                    <blockquote className="flex flex-col justify-between h-full">
                       <div>
-                        <div className="text-sm font-medium">
-                          John Smith, CTO
-                        </div>
-                        <div className="text-xs text-muted-foreground">
-                          Globex Corporation
+                        <p className="text-muted-foreground">
+                          "Working with Livhtec Solutions has been a
+                          game-changer\n for our business. Their innovative
+                          solutions and\n exceptional support have helped us
+                          streamline our\n operations and drive growth."
+                        </p>
+                      </div>
+                      <div className="mt-4 flex items-center space-x-4">
+                        <img
+                          src="/placeholder.png"
+                          width="80"
+                          height="40"
+                          alt="Client Logo"
+                          className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+                        />
+                        <div>
+                          <div className="text-sm font-medium">
+                            John Smith, CTO
+                          </div>
+                          <div className="text-xs text-muted-foreground">
+                            Globex Corporation
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <div className="rounded-lg border bg-background p-6 shadow-sm">
-                  <blockquote className="flex flex-col justify-between h-full">
-                    <div>
-                      <p className="text-muted-foreground">
-                        "Livhtec Solutions's expertise and personalized\n
-                        approach have been instrumental in helping us\n navigate
-                        the complexities of our IT infrastructure.\n We highly
-                        recommend their services."
-                      </p>
-                    </div>
-                    <div className="mt-4 flex items-center space-x-4">
-                      <img
-                        src="/placeholder.png"
-                        width="80"
-                        height="40"
-                        alt="Client Logo"
-                        className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                      />
+                    </blockquote>
+                  </div>
+                  <div className="rounded-lg border bg-background p-6 shadow-sm">
+                    <blockquote className="flex flex-col justify-between h-full">
                       <div>
-                        <div className="text-sm font-medium">
-                          Sarah Lee, IT Manager
-                        </div>
-                        <div className="text-xs text-muted-foreground">
-                          Stark Industries
+                        <p className="text-muted-foreground">
+                          "Livhtec Solutions's expertise and personalized\n
+                          approach have been instrumental in helping us\n
+                          navigate the complexities of our IT infrastructure.\n
+                          We highly recommend their services."
+                        </p>
+                      </div>
+                      <div className="mt-4 flex items-center space-x-4">
+                        <img
+                          src="/placeholder.png"
+                          width="80"
+                          height="40"
+                          alt="Client Logo"
+                          className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+                        />
+                        <div>
+                          <div className="text-sm font-medium">
+                            Sarah Lee, IT Manager
+                          </div>
+                          <div className="text-xs text-muted-foreground">
+                            Stark Industries
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </blockquote>
+                    </blockquote>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section className="w-full py-6 md:py-16">
-          <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Our Expertise
-              </h2>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Learn more about our specialized services and how we can help
-                your business.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-card rounded-lg p-6 space-y-4">
-                <div className="flex items-center gap-4">
-                  <DatabaseIcon className="h-8 w-8 text-primary" />
-                  <h3 className="text-xl font-bold">Database Management</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Our experts will help you design, implement, and maintain
-                  robust database solutions to power your applications.
-                </p>
-              </div>
-              <div className="bg-card rounded-lg p-6 space-y-4">
-                <div className="flex items-center gap-4">
-                  <NetworkIcon className="h-8 w-8 text-primary" />
-                  <h3 className="text-xl font-bold">Network Security</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Protect your network and data from cyber threats with our
-                  comprehensive security services.
-                </p>
-              </div>
-              <div className="bg-card rounded-lg p-6 space-y-4">
-                <div className="flex items-center gap-4">
-                  <DatabaseIcon className="h-8 w-8 text-primary" />
-                  <h3 className="text-xl font-bold">Data Analytics</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Unlock the power of your data with our advanced analytics
-                  solutions, helping you make informed decisions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="w-full py-6 md:py-16 bg-card">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                  Get in Touch
+          <section className="w-full py-6 md:py-16">
+            <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
+              <div className="space-y-3">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Our Expertise
                 </h2>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Fill out the form below to schedule a free consultation and
-                  learn how Livhtec Solutions can help your business.
+                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Learn more about our specialized services and how we can help
+                  your business.
                 </p>
               </div>
-              <form className="space-y-4">
-                <Input type="text" placeholder="Name" className="w-full" />
-                <Input type="email" placeholder="Email" className="w-full" />
-                <Textarea placeholder="Message" className="w-full" rows={4} />
-                <Button type="submit" className="w-full">
-                  Submit
-                </Button>
-              </form>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="bg-card rounded-lg p-6 space-y-4">
+                  <div className="flex items-center gap-4">
+                    <DatabaseIcon className="h-8 w-8 text-primary" />
+                    <h3 className="text-xl font-bold">Database Management</h3>
+                  </div>
+                  <p className="text-muted-foreground">
+                    Our experts will help you design, implement, and maintain
+                    robust database solutions to power your applications.
+                  </p>
+                </div>
+                <div className="bg-card rounded-lg p-6 space-y-4">
+                  <div className="flex items-center gap-4">
+                    <NetworkIcon className="h-8 w-8 text-primary" />
+                    <h3 className="text-xl font-bold">Network Security</h3>
+                  </div>
+                  <p className="text-muted-foreground">
+                    Protect your network and data from cyber threats with our
+                    comprehensive security services.
+                  </p>
+                </div>
+                <div className="bg-card rounded-lg p-6 space-y-4">
+                  <div className="flex items-center gap-4">
+                    <DatabaseIcon className="h-8 w-8 text-primary" />
+                    <h3 className="text-xl font-bold">Data Analytics</h3>
+                  </div>
+                  <p className="text-muted-foreground">
+                    Unlock the power of your data with our advanced analytics
+                    solutions, helping you make informed decisions.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
-      </main>
-      <footer className="flex flex-col gap-2 sm:flex-row container py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-muted-foreground">
-          &copy; 2024 Livhtec Solutions. All rights reserved.
-        </p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          {/* <Link
+          </section>
+
+          <section className="w-full py-6 md:py-16 bg-card">
+            <div className="container px-4 md:px-6">
+              <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
+                <div className="space-y-2">
+                  <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                    Get in Touch
+                  </h2>
+                  <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    Fill out the form below to schedule a free consultation and
+                    learn how Livhtec Solutions can help your business.
+                  </p>
+                </div>
+                <form className="space-y-4">
+                  <Input type="text" placeholder="Name" className="w-full" />
+                  <Input type="email" placeholder="Email" className="w-full" />
+                  <Textarea placeholder="Message" className="w-full" rows={4} />
+                  <Button type="submit" className="w-full">
+                    Submit
+                  </Button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer className="flex flex-col gap-2 sm:flex-row container py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+          <p className="text-xs text-muted-foreground">
+            &copy; 2024 Livhtec Solutions. All rights reserved.
+          </p>
+          <nav className="sm:ml-auto flex gap-4 sm:gap-6">
+            {/* <Link
             href="#"
             className="text-xs hover:underline underline-offset-4"
             prefetch={false}
@@ -349,9 +355,10 @@ export default function Home() {
           >
             Privacy
           </Link> */}
-        </nav>
-      </footer>
-    </div>
+          </nav>
+        </footer>
+      </div>
+    </>
   )
 }
 
