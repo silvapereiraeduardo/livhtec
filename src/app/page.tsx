@@ -362,7 +362,7 @@ export default function Home() {
   )
 }
 
-function CloudIcon(props) {
+function CloudIcon(props: any) {
   return (
     <svg
       {...props}
@@ -381,7 +381,7 @@ function CloudIcon(props) {
   )
 }
 
-function LivhtecIcon(props) {
+function LivhtecIcon(props: any) {
   return (
     <svg
       {...props}
@@ -434,7 +434,7 @@ function LivhtecIcon(props) {
   )
 }
 
-function ConciergeBellIcon(props) {
+function ConciergeBellIcon(props: any) {
   return (
     <svg
       {...props}
@@ -456,7 +456,7 @@ function ConciergeBellIcon(props) {
   )
 }
 
-function LockIcon(props) {
+function LockIcon(props: any) {
   return (
     <svg
       {...props}
@@ -476,7 +476,7 @@ function LockIcon(props) {
   )
 }
 
-function NetworkIcon(props) {
+function NetworkIcon(props: any) {
   return (
     <svg
       {...props}
@@ -499,7 +499,7 @@ function NetworkIcon(props) {
   )
 }
 
-function DatabaseIcon(props) {
+function DatabaseIcon(props: any) {
   return (
     <svg
       {...props}
