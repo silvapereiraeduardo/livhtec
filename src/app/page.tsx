@@ -30,7 +30,7 @@ export default function Home() {
             href="https://www.linkedin.com/company/livhtec/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:underline"
+            className="flex items-center gap-2 text-blue-600 hover:text-blue-800"
           >
             Follow us on LinkedIn
           </a>
